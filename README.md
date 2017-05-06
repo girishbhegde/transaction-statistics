@@ -14,3 +14,9 @@ How it works?
 The data is stored in linkedlist with each node/bucket containing the data recieved in past corresponding one minute interval at. For example data with current timestamp goes to index 0 while data 30 sec old goes to index 29. 
 There is a periodic job running that creates a new node of data every second. Also this job calculates the min and max values if the min/max expires
 
+How to run?
+mvn clean package
+java -jar target/transaction-statistics-1.0.0-SNAPSHOT.jar 8080
+
+hit localhost:8080
+
