@@ -20,12 +20,6 @@ public class TransactionStatisticsServiceTest {
     }
 
     @Test
-    public void testInit(){
-        assertTrue(0 == testClass.getStatistics().getDouble("min").doubleValue());
-        assertTrue(0 == testClass.getStatistics().getDouble("max").doubleValue());
-    }
-
-    @Test
     public void testPostTransaction(){
         Transaction txn = new Transaction();
         txn.setAmount(100);
